@@ -9,7 +9,7 @@ SPECIAL_CHARS_REQUIRED = True
 SPECIAL_CHARACTERS = "10#$%^&*).-=+`~,./'[]<>?{}|\\"
 
 
-def mainO:
+def main:
     """Validate password."""
     print ("Please enter a valid password")
     print("Your password must be between", MINIMUM_LENGTH, "and", MAXIMUM_LENGTH,
@@ -64,7 +64,7 @@ def is_valid_password(password):
         return True
 
 
-mainO()
+main0()
 
 
 
