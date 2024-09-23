@@ -1,0 +1,9 @@
+"""model - level docstring"""
+import statements
+CONSTANTS
+
+def main():
+    name = ""
+    while True:
+        display_menu()
+        choice = input("Enter your choice (1, 2, or 3): ").strip()
