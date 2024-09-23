@@ -1,31 +1,25 @@
-def main():
-    # Get user's name
-    name = input("Enter your name: ")
+# menus.py
 
-    # Display menu
-    MENU = """Menu:
-    H - Say Hello
-    G - Say Goodbye
-    Q - Quit"""
+# Get the user's name
+name = input("Enter name: ")
 
-    print(MENU)
-    choice = input("Enter your choice (H, G, or Q): ").upper()
+# Display the menu and get the user's choice
+menu = "(H)ello\n(G)oodbye\n(Q)uit"
+print(menu)
+choice = input(">>> ").upper()
 
-    # Menu-driven loop
-    while choice != "Q":
-        if choice == "H":
-            print("Hello, {}!".format(name))
-        elif choice == "G":
-            print("Goodbye, {}!".format(name))
-        else:
-            print("Invalid choice. Please enter H, G, or Q.")
+# Main loop for the menu-driven program
+while choice != "Q":
+    if choice == "H":
+        print(f"Hello {name}")
+    elif choice == "G":
+        print(f"Goodbye {name}")
+    else:
+        print("Invalid choice")
 
-        # Display menu and get choice again
-        print(MENU)
-        choice = input("Enter your choice (H, G, or Q): ").upper()
+    # Display the menu and get the next choice
+    print(menu)
+    choice = input(">>> ").upper()
 
-    # Display finished message
-    print("Program finished. Goodbye, {}!".format(name))
-
-if __name__ == "__main__":
-    main()
+# Final message after quitting
+print("Finished.")
