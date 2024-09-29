@@ -1,25 +1,19 @@
-MIN_PASSWORD_LENGTH = 10
+def get_password():
+    """Get a password from the user and check its validity."""
+    password = input("Enter your password: ")
+    if len(password) < 6:
+        print("Password must be at least 6 characters long.")
+        return get_password()  # Recursive call to get a valid password
+    return password
+
+def print_asterisks(password):
+    """Print asterisks corresponding to the length of the password."""
+    print('*' * len(password))
 
 def main():
-    user_password = get_password()
-    while len(user_password) < MINI_PASS_LENGTH:
-        print("password must be at least(MIN_PASSWORD_LENGTH)long.Try again.")
-        user_password = get_password()
+    """Main function to run the password check program."""
+    password = get_password()
+    print_asterisks(password)
 
-    asterisk_password = get_asterisk(password)
-    print(asterisk_password)
-
-def get_password():
-    user_password = input("please enter a password:")
-
-    return user_password
-
-def get_asterisk(password):
-    asterisk_password = ""
-    for i in range(len(password)):
-        asterisk_password +="*"
-
-    return asterisk_password
-
-
-
+if __name__ == "__main__":
+    main()

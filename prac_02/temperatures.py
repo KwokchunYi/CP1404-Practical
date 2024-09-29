@@ -1,23 +1,27 @@
-def Celsius_to_Fahrenheit(celsius):
-    """
-    Convert celsius to Fahrenheit
-    Formula:(celsius * 1.8) + 32
-    """
-    return(celsius * 1.8) + 32
+def celsius_to_fahrenheit(celsius):
+    """Convert Celsius to Fahrenheit."""
+    return (celsius * 9 / 5) + 32
 
-def Fahrenheit_to_Celsius(Fahrenheit):
-    """
-    Convert Fahrenheit to Celsius
-    Formula:(Fahrenheit - 32) / 1.8
-    """
-    return(Fahrenheit - 32) / 1.8
+
+def fahrenheit_to_celsius(fahrenheit):
+    """Convert Fahrenheit to Celsius."""
+    return (fahrenheit - 32) * 5 / 9
+
 
 def main():
-    option = input("A. Convert to celsius\nB. Convert to fahrenheit\nselect an option: ")
-    value = float(input("Enter the value: "))
-    if option == "A":
-        print("converted celsius: " + str(Fahrenheit_to_Celsius(value)))
-    elif option == "B":
-        print("converted Fahrenheit: " + str(Celsius_to_Fahrenheit(value)))
+    """Main function to execute temperature conversions."""
+    print("Temperature Conversion")
 
+    # Get user input for Celsius to Fahrenheit conversion
+    celsius = float(input("Enter temperature in Celsius: "))
+    fahrenheit = celsius_to_fahrenheit(celsius)
+    print(f"{celsius}°C is equal to {fahrenheit:.2f}°F")
+
+    # Get user input for Fahrenheit to Celsius conversion
+    fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+    celsius = fahrenheit_to_celsius(fahrenheit)
+    print(f"{fahrenheit}°F is equal to {celsius:.2f}°C")
+
+
+if __name__ == "__main__":
     main()
