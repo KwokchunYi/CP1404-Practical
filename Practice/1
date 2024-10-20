@@ -1,9 +1,8 @@
-"""model - level docstring"""
-import statements
-CONSTANTS
-
-def main():
-    name = ""
-    while True:
-        display_menu()
-        choice = input("Enter your choice (1, 2, or 3): ").strip()
+def print_comment_lines(filename):
+    try:
+        with open(filename, 'r') as file:
+            for line in file:
+                if line.startswith('#'):
+                    print(line.strip())
+    except FileNotFoundError:
+        print(f"The file '{filename}' does not exist.")
