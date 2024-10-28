@@ -2,7 +2,7 @@
 CP1404 Assignment 1 - Travel Tracker
 Name:Yik kwokchun
 Date started: 20/10/2024
-GitHub URL:
+GitHub URL:https://github.com/KwokchunYi/CP1404-Practical
 """
 
 import random
