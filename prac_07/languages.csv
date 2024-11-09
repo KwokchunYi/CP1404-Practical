@@ -1,0 +1,9 @@
+Language,Typing,Reflection,Year,Pointer Arithmetic
+Python,Dynamic,Yes,1991,No
+Ruby,Dynamic,Yes,1995,No
+C,Static,No,1972,Yes
+C++,Static,No,1983,Yes
+Java,Static,No,1995,No
+Go,Static,No,2009,No
+Rust,Static,Yes,2010,No
+Swift,Static,Yes,2014,No
