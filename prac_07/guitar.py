@@ -1,3 +1,4 @@
+
 class Guitar:
     """Represent a Guitar object."""
 
