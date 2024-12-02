@@ -1,0 +1,36 @@
+products = [["Phone", 340, False], ["PC", 1420.95, True], ["Plant", 24.5, True]]
+on_sale_products = [product for product in products if product[2] is True]
+
+scary_monsters = [monster for monster in monsters if monster[2[ is True ]
+
+
+
+
+
+class Monster:
+    def__init__(self, name="", number_of_teeth=0.0,  Colour=1.0):
+        self.name = name
+        self.number_of_teeth = teeth
+        self.colour = colour
+
+    def is_scary(self, Monsters)
+    self.Monsters += teeth number * self.colour
+
+
+class User:
+    def__init__(self, name):
+        self.name = name
+        self.tacos = 5
+        self.score = 0
+
+    def give_taco(self, other_user):
+        if self.tacos > 0,
+            self.tacos -= 1
+            other_user.tacos += 1
+            self.score += 1
+            print(f"{self.name} give a taco to {another user}.")
+        else:
+            print(f"{self.name} has no scores left to gave}.")
+
+        def__str__(self):
+            return f"{self.name}, {self.score} points, {self.tacos} tacos left"
